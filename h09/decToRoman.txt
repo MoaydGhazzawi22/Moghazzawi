@@ -1,0 +1,113 @@
+/**
+ *  @file dec_to_roman.cpp
+ *  Convert a decimal number into its
+ *  Roman Numeral Representation
+ *
+ *  num is a decimal number (1..4000]
+ *  Prints Roman Numeral representation or "OUT OF RANGE"
+ */
+#include <iostream>
+#include <string>
+using namespace std;
+
+const string OOR = "OUT OF RANGE";
+
+int main()
+{
+    cout << "Enter an integer: ";
+    int num;
+    cin >> num;
+    int original_num = num;
+    
+    string roman;
+
+    // Make sure it's in range
+    if (num <= 0 or num >= 4000)
+    {
+        roman = OOR;
+    }
+    else
+    {
+        // Convert the thousands digit
+        // Only three allowed
+        int digit = num / 1000;
+
+        if (digit == 3)
+            roman= "MMM";
+        else if (digit == 2)
+            roman= "MM";
+        else if (digit == 1)
+            roman= "M";
+
+        // Get the 100's digit
+        num = num % 1000;
+        digit = num / 100;
+
+        if (digit == 9)
+            roman = roman + "CM";
+        else if (digit == 4)
+            roman = roman + "CD";
+        else
+        {
+            if (digit >= 5)
+            {
+                roman = roman + "D";
+                digit = digit - 5;
+            }
+            if (digit == 3)
+                roman = roman + "CCC";
+            else if (digit == 2)
+                roman = roman + "CC";
+            else if (digit == 1)
+                roman = roman + "C";
+        }
+
+        // Get the 10s digit
+        num = num % 100;
+        digit = num / 10;
+
+        if (digit == 9)
+            roman = roman + "XC";
+        else if (digit == 4)
+            roman = roman + "XL";
+        else
+        {
+            if (digit >= 5)
+            {
+                roman = roman + "L";
+                digit = digit - 5;
+            }
+            if (digit == 3)
+                roman = roman + "XXX";
+            else if (digit == 2)
+                roman = roman + "XX";
+            else if (digit == 1)
+                roman = roman + "X";
+        }
+
+        // Get the 1s digit
+        digit = num % 10;
+
+        if (digit == 9)
+            roman = roman + "IX";
+        else if (digit == 4)
+            roman = roman + "IV";
+        else
+        {
+            if (digit >= 5)
+            {
+                roman = roman + "V";
+                digit = digit - 5;
+            }
+            if (digit == 3)
+                roman = roman + "III";
+            else if (digit == 2)
+                roman = roman + "II";
+            else if (digit == 1)
+                roman = roman + "I";
+        }
+    }
+    
+    cout << original_num << " is " << roman << " in Roman Numerals." << endl;
+}
+
