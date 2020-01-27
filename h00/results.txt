@@ -1,0 +1,14 @@
+INSTRUCTOR TESTING H00--mghazzawi
+----------------------------------------------------------------------
+   X Input of 5: expected [0.000141748, 7054.78] but found [1, 1]
+   X Input of 8: expected [0.000226796, 4409.24] but found [1, 1]
+   X Input of 11: expected [0.000311845, 3206.72] but found [1, 1]
+   X Input of 14: expected [0.000396894, 2519.57] but found [1, 1]
+   X Input of 15: expected [0.000425243, 2351.59] but found [1, 1]
+   X Input of 24: expected [0.000680389, 1469.75] but found [1, 1]
+   X Input of 32: expected [0.000907186, 1102.31] but found [1, 1]
+   + Input of 35273.92->1, 1
+----------------------------------------------------------------------
+INSTRUCTOR TESTS H00:mghazzawi: ALL TESTS -- PASS 1/8 (12%).
+----------------------------------------------------------------------
+MTU4MDE1NDA5MzptZ2hhenphd2k6SDAwOjEyLjUwJQ==
