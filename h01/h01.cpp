@@ -1,6 +1,6 @@
 /**
- *  @author Put your name here
- *  @date Put the date here
+ *  Moayd Ghazzawi
+ *  02/02/2020
  *  @file h01.cpp
  */
 #include <iostream>
@@ -8,7 +8,7 @@
 #include <iomanip>
 using namespace std;
 
-string STUDENT = "Who Are You?";  // Add your Canvas login name
+string STUDENT = "mghazzawi";  // Add your Canvas login name
 extern string ASSIGNMENT;
 
 
