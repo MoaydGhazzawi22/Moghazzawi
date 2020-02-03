@@ -26,7 +26,7 @@ int run()
         int time, duration, after, before, afterHours, afterMinutes;
         int beforeHours, beforeMinutes;
         int timeHours, timeMinutes, durationHours, durationMinutes;
-        char discard;
+        char dCard;
         cout << "Give me a time (such as 3:57) and a duration" << endl;
         cout << "(such as 1:05), and I'll tell you the sum" << endl;
         cout << "(that is, the time that follows the given time" << endl;
@@ -38,13 +38,13 @@ int run()
 
 
         cout << "Time:" ;
-        cin >> timeHours >> discard >> timeMinutes;
+        cin >> timeHours >> dCard >> timeMinutes;
 
 
 
 
         cout << "Duration:" ;
-        cin >> durationHours >> discard >> durationMinutes;
+        cin >> durationHours >> dCard >> durationMinutes;
         cout << endl;
 
 
