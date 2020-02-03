@@ -44,9 +44,12 @@ int run()
     cin >>  dieterWeight;
 
     //Output section
+    // formula
 
    int friendsWeightGrams = gramsPerPound * dieterWeight;
    float mouseLethalDosePercentage = lethalDoseMouse / mouseWeightInGrams;
+
+
    double friendsLethalDose = friendsWeightGrams * mouseLethalDosePercentage;
    double lethalSodaDose = friendsLethalDose / artificialSweetnerInSoda;
 
