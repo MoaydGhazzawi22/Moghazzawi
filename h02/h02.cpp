@@ -19,36 +19,37 @@ extern string ASSIGNMENT;
  * @return 0 for success.
  */
 
-     const double artificialSweetenerPerCan = 35.0;
-     const double poundPerGram = 454.0;
-     double mouseWeightInGrams;
 
-     double lethalDoseMouseInGrams;
-     double dieterWeightInPounds;
-     double dieterWeightInGrams;
 
-     double lethalDoseforFriend;
-     double numberOfCans;
 
      //Input section
 
 int run()
 {
+    float weightMouse;
+    int killAmountMouse, desierdWeight;
+    const int g2Lb = 454;
+    const int sodacanGram = 350;
+    const double sweetnerInSoda = sodacanGram * 0.001;
 
-    cout <<" Please enter the weight of the mouse in grams: ";
-    cin >> mouseWeightInGrams;
-    cout <<" Please enter the Lethal dose for the mouse (in grams): ";
-    cin >> lethalDoseMouseInGrams;
-    cout << " Please enter the desired weight of the dieter (in pounds): ";
-    cin >>  dieterWeightInPounds;
+    cout <<" Please enter the weight of the mouse in grams: " << endl;
+    cin >> weightMouse;
+
+    cout <<" Please enter the Lethal dose for the mouse (in grams): " << endl;
+    cin >> killAmountMouse;
+
+    cout << " Please enter the desired weight of the dieter (in pounds): " << endl;
+    cin >>  desierdWeight;
 
     //Output section
 
-    dieterWeightInGrams = poundPerGram * dieterWeightInPounds;
-    lethalDoseforFriend = (dieterWeightInGrams / mouseWeightInGrams) * lethalDoseMouseInGrams;
-    numberOfCans = (lethalDoseforFriend / artificialSweetenerPerCan) * 100;
+   int weightHumanGrams = g2Lb * desierdWeight;
+   float mouseLethalDosePercent = killAmountMouse / weightMouse;
+   double humanKillAmount = weightHumanGrams * mouseLethalDosePercent;
+   double sodaKillAmount = humanKillAmount / sweetnerInSoda;
 
-    cout << "Lethal dose in grams, cans is [" << lethalDoseforFriend << fixed << setprecision(0) << ",]";
+    cout << fixed << setprecision(0);
+    cout << "Lethal dose in grams, cans is : [" << humanKillAmount << ", " << sodaKillAmount << "]" << endl;
 
     return 0;
 }
