@@ -57,10 +57,10 @@ int run()
          after = time + duration;
           before = time - duration;
 
-    afterHours = (after / 60);
+          afterHours = (after / 60);
           afterMinutes = (after)%60;
 
-        beforeHours = (before/60);
+        beforeHours = (before/60 + 11) % 12 + 1;
         beforeMinutes = before%60;
           cout<< "beforeMinutes -->" << beforeMinutes;
 
