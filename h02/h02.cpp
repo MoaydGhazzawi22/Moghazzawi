@@ -26,13 +26,15 @@ extern string ASSIGNMENT;
 
 int run()
 {
+    const int gramsPerPound = 454;
+    const int sodaCanInGrams = 350;
+    const double artificialSweetnerInSoda = sodaCanInGrams * 0.001;
+
     float mouseWeightInGrams;
     int lethalDoseMouse;
     int dieterWeight;
 
-    const int gramsPerPound = 454;
-    const int sodaCanInGrams = 350;
-    const double artificialSweetnerInSoda = sodaCanInGrams * 0.001;
+
 
     cout <<" Please enter the weight of the mouse in grams: " << endl;
     cin >> mouseWeightInGrams;
