@@ -12,10 +12,8 @@ string STUDENT = "mghazzawi";  // Add your Canvas login name
 extern string ASSIGNMENT;
 
 /**
- * This program will determine how much diet soda
- * can be consumed safely.  The program will ask for
- * the dieter's target weight to calculate the amount of
- * diet soda the patient can safely drink.
+This program will help us to know how much diet soda it is possible to drink without dying as a result.
+
  * @return 0 for success.
  */
 
