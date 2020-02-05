@@ -93,13 +93,13 @@ double letterToPoints(stringIn letterGrade){
 }
 
 void printReport(double points){
-		cout <<"Grade value is [";
+		cout <<"Grade value is ["<<points<<"]"<<endl;;
 	if(points == INVALID_INPUT){
 		cout << "Invalid input";
 	}else if (points == INVALID_COMBINATION){
 		cout << "Invalid combination";
 	}else{
 		cout << fixed << setprecision(1) << endl;
-		cout <<"Grade value is ["<<points<<"]"<<endl;;
+
 	}
 }
