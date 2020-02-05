@@ -104,5 +104,5 @@ void printReport(double points){
 	}else{
 
 	}
-		cout << "]";
+		cout <<points<< "]";
 }
