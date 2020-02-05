@@ -80,7 +80,11 @@ double letterToPoints(stringIn letterGrade){
 		result = .7;
 	}else if(letterGrade == "F"){
 		result = 0.0;
-	}else if(letterGrade == "A+" || letterGrade == "F+" || letterGrade == "F-"){
+	}else if(letterGrade == "A+"){
+		result = INVALID_COMBINATION;
+	}else if(letterGrade == "F+"){
+		result = INVALID_COMBINATION;
+	}else if(letterGrade == "F-"){
 		result = INVALID_COMBINATION;
 	}else {
 		result = INVALID_INPUT;
