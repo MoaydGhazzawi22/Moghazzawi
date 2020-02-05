@@ -93,7 +93,7 @@ double letterToPoints(stringIn letterGrade){
 }
 
 void printReport(double points){
-		cout <<"Grade value is ["<<points<<"]"<<endl;;
+		cout <<"Grade value is ["<<points<<"]";
 
 		cout <<"Grade value is [";
 		cout << fixed << setprecision(1) << endl;
