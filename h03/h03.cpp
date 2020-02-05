@@ -1,6 +1,6 @@
 /**
- *  @author Put your name here
- *  @date Put the date here
+ *  @author Moayd Ghazzawi
+ *  @date 2/4/2020
  *  @file h03.cpp
  */
 #include <iostream>
@@ -9,7 +9,7 @@
 using namespace std;
 using stringIn = const string&;
 
-string STUDENT = "WHO ARE YOU"; // Add your Canvas login name
+string STUDENT = "mghazzawi"; // Add your Canvas login name
 extern string ASSIGNMENT;
 
 // Function Prototypes
@@ -38,3 +38,64 @@ int run()
 }
 
 // Implement your functions here
+
+void printTitle()
+{
+	cout << STUDENT << "-" << ASSIGNMENT << "-Grade Calculator" << endl;
+	cout << " -------------------------------------------" << endl;
+	cout << "Enter your letter grade: ";
+	string letterGrade;
+
+}
+
+string getInput(){
+	string letterGrade;
+	getline(cin, letterGrade);
+	return letterGrade;
+
+}
+
+double letterToPoints(stringIn letterGrade){
+	double result = 0.0;
+	if(letterGrade == "A"){
+		result = 4.0;
+	}else if (letterGrade == "A-"){
+		result = 3.7;
+	}else if(letterGrade == "B+"){
+		result = 3.3;
+	}else if(letterGrade == "B"){
+		result = 3.0;
+	}else if(letterGrade == "B-"){
+		result = 2.7;
+	}else if(letterGrade == "C+"){
+		result = 2.3;
+	}else if(letterGrade == "C"){
+		result = 2.0;
+	}else if(letterGrade == "C-"){
+		result = 1.7;
+	}else if(letterGrade == "D+"){
+		result = 1.3;
+	}else if(letterGrade == "D"){
+		result = 1.0;
+	}else if(letterGrade == "D-"){
+		result = .7;
+	}else if(letterGrade == "F"){
+		result = 0.0;
+	}else if(letterGrade == "A+" || letterGrade == "F+" || letterGrade == "F-"){
+		result = INVALID_COMBINATION;
+	}else {
+		result = INVALID_INPUT;
+	}
+	return result;
+}
+
+void printReport(double points){
+	if(points == INVALID_INPUT){
+		cout << "Invalid Input";
+	}else if (points == INVALID_COMBINATION){
+		cout << "Invalid Combination";
+	}else{
+		cout << fixed << setprecision(2) << endl;
+		cout << "Grade value is [" << points << "]" << endl;;
+	}
+}
