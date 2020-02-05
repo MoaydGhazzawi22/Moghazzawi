@@ -99,9 +99,8 @@ void printReport(double points){
 	}else if (points == INVALID_COMBINATION){
 		cout << "Invalid combination";
 	}else{
-
-	}
 		cout << fixed << setprecision(1);
 		cout << points;
-		cout << "]"  << endl;;
+		cout << "]"  << endl;
+	}
 }
