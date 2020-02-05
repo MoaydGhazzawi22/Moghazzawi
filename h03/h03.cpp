@@ -102,5 +102,5 @@ void printReport(double points){
 		cout << fixed << setprecision(1) << endl;
 		cout << points;
 	}
-		cout <<"]\n";
+		cout <<"\n]";
 }
