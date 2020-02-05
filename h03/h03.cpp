@@ -100,7 +100,7 @@ void printReport(double points){
 		cout << "Invalid Combination";
 	}else{
 		cout << fixed << setprecision(1) << endl;
-		cout << points << endl;;
+		cout << points;
 	}
 		cout << "]\n";
 }
