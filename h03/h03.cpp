@@ -55,31 +55,31 @@ string getInput(){
 }
 
 double letterToPoints(stringIn letterGrade){
-	double result = 0.0;
+	double result =0.0;
 	if(letterGrade == "A"){
-		result = 4.0;
+		result =4.0;
 	}else if (letterGrade == "A-"){
-		result = 3.7;
+		result =3.7;
 	}else if(letterGrade == "B+"){
-		result = 3.3;
+		result =3.3;
 	}else if(letterGrade == "B"){
-		result = 3.0;
+		result =3.0;
 	}else if(letterGrade == "B-"){
-		result = 2.7;
+		result =2.7;
 	}else if(letterGrade == "C+"){
-		result = 2.3;
+		result =2.3;
 	}else if(letterGrade == "C"){
-		result = 2.0;
+		result =2.0;
 	}else if(letterGrade == "C-"){
-		result = 1.7;
+		result =1.7;
 	}else if(letterGrade == "D+"){
-		result = 1.3;
+		result =1.3;
 	}else if(letterGrade == "D"){
-		result = 1.0;
+		result =1.0;
 	}else if(letterGrade == "D-"){
-		result = .7;
+		result =.7;
 	}else if(letterGrade == "F"){
-		result = 0.0;
+		result =0.0;
 	}else if(letterGrade == "A+"){
 		result = INVALID_COMBINATION;
 	}else if(letterGrade == "F+"){
