@@ -44,7 +44,6 @@ void printTitle()
 	cout << STUDENT << "-" << ASSIGNMENT << "-Grade Calculator" << endl;
 	cout << " -------------------------------------------" << endl;
 	cout << "Enter your letter grade: ";
-	string letterGrade;
 
 }
 
