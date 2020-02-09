@@ -14,31 +14,6 @@ extern string ASSIGNMENT;
 // Add your function declaration here
 
 string getStatus(double gpa, int credits, int honorsCredits);
-string getStatus(double gpa, int credits, int honorsCredits) {
-    string result;
-    if (gpa < 2.0 || credits < 180) {
-        result = "not graduating";
-    }
-    else if (gpa >= 2.0 && gpa <= 3.6 && credits >= 180) {
-        result = "graduating";
-    }
-    else if (honorsCredits < 15 && gpa >= 3.6 && gpa < 3.8 && credits >=180) {
-        result = "cum laude";
-    }
-    else if (honorsCredits < 15 && gpa == 3.8 && credits >= 180) {
-        result = "magna cum laude";
-    }
-    else if (honorsCredits >= 15 && gpa >= 3.6 && gpa < 3.8 && credits >= 180) {
-        result = "magna cum laude";
-    }
-    else if (honorsCredits >= 15 && gpa >= 3.8 && credits >= 180) {
-        result = "summa cum laude";
-    }
-    else {
-        result = "Invalid input";
-    }
-    return 0;
-}
 
 /**
  * Describe the purpose of your program here.
@@ -84,3 +59,28 @@ int run()
 }
 
 // Implement your function here
+string getStatus(double gpa, int credits, int honorsCredits) {
+    string result;
+    if (gpa < 2.0 || credits < 180) {
+        result = "not graduating";
+    }
+    else if (gpa >= 2.0 && gpa <= 3.6 && credits >= 180) {
+        result = "graduating";
+    }
+    else if (honorsCredits < 15 && gpa >= 3.6 && gpa < 3.8 && credits >=180) {
+        result = "cum laude";
+    }
+    else if (honorsCredits < 15 && gpa == 3.8 && credits >= 180) {
+        result = "magna cum laude";
+    }
+    else if (honorsCredits >= 15 && gpa >= 3.6 && gpa < 3.8 && credits >= 180) {
+        result = "magna cum laude";
+    }
+    else if (honorsCredits >= 15 && gpa >= 3.8 && credits >= 180) {
+        result = "summa cum laude";
+    }
+    else {
+        result = "Invalid input";
+    }
+        return 0;
+}
