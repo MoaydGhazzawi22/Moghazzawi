@@ -1,21 +1,21 @@
 INSTRUCTOR TESTING H04--mghazzawi
 ----------------------------------------------------------------------
+   + Input of 3.85 190 15->"summa cum laude"
    + Input of 3.62 200 20->"magna cum laude"
+   + Input of 3.93 185 0->"magna cum laude"
+   + Input of 2.0 180 0->"graduating"
    + Input of 3.79 300 14->"cum laude"
-   + Input of 4.0 179 0->"not graduating"
    + Input of 1.5 199 30->"not graduating"
+   + Input of 1.5 199 30->"not graduating"
+   + Input of 3.6 180 3->"cum laude"
+   + Input of 3.80 190 15->"summa cum laude"
    + Input of 4.0 5000 14->"magna cum laude"
    + Input of 3.79 190 15->"magna cum laude"
-   + Input of 2.1 185 10->"graduating"
-   + Input of 3.6 180 3->"cum laude"
-   + Input of 2.7 380 50->"graduating"
-   + Input of 1.5 199 30->"not graduating"
+   + Input of 4.0 179 0->"not graduating"
    + Input of 3.87 178 16->"not graduating"
-   + Input of 2.0 180 0->"graduating"
-   + Input of 3.93 185 0->"magna cum laude"
-   + Input of 3.80 190 15->"summa cum laude"
-   + Input of 3.85 190 15->"summa cum laude"
+   + Input of 2.7 380 50->"graduating"
+   + Input of 2.1 185 10->"graduating"
 ----------------------------------------------------------------------
 INSTRUCTOR TESTS H04:mghazzawi: ALL TESTS -- PASS 15/15 (100%).
 ----------------------------------------------------------------------
-MTU4MTIzODY5MjptZ2hhenphd2k6SDA0OjEwMC4wMCU=
+MTU4MTIzODcyMTptZ2hhenphd2k6SDA0OjEwMC4wMCU=
