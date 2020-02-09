@@ -17,7 +17,7 @@ string getStatus(double gpa, int credits, int honorsCredits);
 
 /**
  * Describe the purpose of your program here.
- * You are given the following, student GPA, total credit count, and honors credit (Input)
+ * Given the following, student GPA, total credit count, and honors credit (Input)
  * The total credit count already includes the honors credits.
  *
  * Declear and define function getStatus()
