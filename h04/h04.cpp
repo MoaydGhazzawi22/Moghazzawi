@@ -31,7 +31,7 @@ string getStatus(double gpa, int credits, int honorsCredits);
  * if students have gpa between 2.0 and 3.6 receive return value "graduating"
  *
  * else if student with fewer than 15 honors credit receive "cum laude" if the gpa 3.6 but less than 3.8
- * and return of "magna cum laude" if their gpa 3.8
+ * and return of "magna cum laude" if their at least gpa 3.8
  *
  * else if students with 15 or more honors credit receive "magna cum laude" if their gpa 3.6 but less than 3.8 and
  * return "summa cum laude" if their gpa at least 3.8
@@ -70,7 +70,7 @@ string getStatus(double gpa, int credits, int honorsCredits) {
     else if (honorsCredits < 15 && gpa >= 3.6 && gpa <= 3.8 && credits >=180) {
         result = "cum laude";
     }
-    else if (honorsCredits < 15 && gpa == 3.8 && credits >= 180) {
+    else if (honorsCredits < 15 && gpa >= 3.8 && credits >= 180) {
         result = "magna cum laude";
     }
     else if (honorsCredits >= 15 && gpa >= 3.6 && gpa < 3.8 && credits >= 180) {
