@@ -61,7 +61,7 @@ int run()
 // Implement your function here
 string getStatus(double gpa, int credits, int honorsCredits) {
     string result;
-    if (gpa < 2.0 || credits < 180) {
+    if (gpa < 2.0 && credits < 180) {
         result = "not graduating";
     }
     else if (gpa >= 2.0 && gpa <= 3.6 && credits >= 180) {
