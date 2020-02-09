@@ -64,7 +64,7 @@ string getStatus(double gpa, int credits, int honorsCredits) {
     if (gpa < 2.0 || credits < 180) {
         result = "not graduating";
     }
-    else if (gpa >= 2.0 && gpa <= 3.6 && credits >= 180 && honorsCredits == 0) {
+    else if (gpa >= 2.0 && gpa <= 3.6 && credits >= 180 && honorsCredits >= 0 && honorsCredits <= 15) {
         result = "graduating";
     }
     else if (honorsCredits < 15 && gpa >= 3.6 && gpa <= 3.8 && credits >=180) {
