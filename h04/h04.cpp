@@ -82,6 +82,5 @@ string getStatus(double gpa, int credits, int honorsCredits) {
     else {
         result = "Invalid input";
     }
-
     return 0;
 }
