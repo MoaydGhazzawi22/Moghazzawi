@@ -79,8 +79,5 @@ string getStatus(double gpa, int credits, int honorsCredits) {
     else if (honorsCredits >= 15 && gpa >= 3.8 && credits >= 180) {
         result = "summa cum laude";
     }
-    else {
-        result = "Invalid input";
-    }
         return result;
 }
