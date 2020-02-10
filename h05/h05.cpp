@@ -30,11 +30,10 @@ Singapore, Monaco, Cuba, and Cyprus.
 Country end in letter e or o? Feminine prefix->la (space)
 Otherwise? Masculine prefix->le (space)
 With these exceptions
- Belize Cambodge Mexique Mozambique Zaire Zimbabwe (all le)
+
+
  Starts with a vowel? prefix l' (no space)
  Plural? prefix is les (space)
- Israel, Madagascar, Sri Lanka, Singapore, Monaco,
-Cuba and Cyprus have no prefix.
 
 
 */
@@ -47,10 +46,24 @@ string toFrenchGender(const string & country)
     string result = "who knows?";
     string prefix;
     string islands = "iles";
+
     int len = country.size();
-    string last = country.substr(country.size()-2);
+    string last = country.substr(country.size()-2,2);
+    string plain = "Israel, Madagascar, Sri Lanka, Singapore, Monaco, Cuba, Cyprus";
+
 
     // Starting with the exceptions
+
+    if(country == "Belize" || country == "Cambodge" || country == "Mexique" || country == "Mozambique" || country == "Zaire" || country == "Zimbabwe"){
+
+        prefix = "all le";
+    }
+    else if(country == "Israel" || country == "Madagascar" || country == "Sri Lanka" || country == "Singapore" || country == "Monaco" || country == "Cuba" || country == "Cyprus"){
+        prefix = "";
+    }
+    else if(country == "Mexique" || country == "Belize"){
+        prefix = "le ";
+    }
 
     result = prefix + country;
     return result;
