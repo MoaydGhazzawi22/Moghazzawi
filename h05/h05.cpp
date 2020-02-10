@@ -47,6 +47,22 @@ string toFrenchGender(const string& country)
     string result = "who knows";
     string prefix = "";
 
+    string last = country.substr(country.size()-2,2);
+
+    cout << last;
+
+    if(country == "Mexique" || country == "Belize"){
+
+        prefix = "le ";
+    }
+    else if(country == "Belize" || country == "Cambodge" || country == "Mexique" || country == "Mozambique" || country == "Zaire" || country == "Zimbabwe"){
+
+        prefix = "all le";
+    }
+    else if(country == "Israel" || country == "Madagascar" || country == "Sri Lanka" || country == "Singapore" || country == "Monaco"){
+
+        prefix = "";
+    }
     return result;
 }
 
