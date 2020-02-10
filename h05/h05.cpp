@@ -41,13 +41,13 @@ string toFrenchGender(const string & country)
     else if(country.substr(0,3) == islands || last == "es" || last == "is" || last == "as" || last == "os"){
         prefix = "les ";
     }
+            // Starting with vowels
+    else if(first == 'A' || first == 'E' || first == 'I' || first == 'O' || first == 'U'){
+        prefix = 'l';
+    }
         // No prefix
     else if(country == "Israel" || country == "Madagascar" || country == "Sri Lanka" || country == "Singapore" || country == "Monaco" || country == "Cuba" || country == "Cyprus"){
         prefix = "";
-    }
-        // Starting with vowels
-    else if(first == 'A' || first == 'E' || first == 'I' || first == 'O' || first == 'U'){
-        prefix = 'l';
     }
         // Feminine & Masculine prefix
     else if(country.substr(country.length() -1) == "e" || country.substr(country.length() - 1) == "o"){
