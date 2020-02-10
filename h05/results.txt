@@ -1,0 +1,25 @@
+INSTRUCTOR TESTING H05--mghazzawi
+----------------------------------------------------------------------
+Checking function: toFrenchGender("country") -------------------
+   + toFrenchGender("Etats-Unis")->les Etats-Unis
+   + toFrenchGender("iles Salomon")->les iles Salomon
+   + toFrenchGender("Irelande")->l'Irelande
+   + toFrenchGender("Dominique")->la Dominique
+   + toFrenchGender("Finlande")->la Finlande
+   + toFrenchGender("Slovenie")->la Slovenie
+   + toFrenchGender("Surinam")->le Surinam
+   + toFrenchGender("Albanie")->l'Albanie
+   + toFrenchGender("Mexique")->le Mexique
+   + toFrenchGender("Madagascar")->Madagascar
+   + toFrenchGender("Bresil")->le Bresil
+   + toFrenchGender("iles Galapagos")->les iles Galapagos
+   + toFrenchGender("Cyprus")->Cyprus
+   + toFrenchGender("Nicaragua")->le Nicaragua
+   + toFrenchGender("iles Malouines")->les iles Malouines
+----------------------------------------------------------------------
+  Tests passing 15/15 (100%).
+
+----------------------------------------------------------------------
+INSTRUCTOR TESTS H05:mghazzawi: ALL TESTS -- PASS 15/15 (100%).
+----------------------------------------------------------------------
+MTU4MTMxMzAwNzptZ2hhenphd2k6SDA1OjEwMC4wMCU=
