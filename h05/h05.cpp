@@ -38,7 +38,7 @@ string toFrenchGender(const string & country)
         prefix = "l";
     }
         // Plural
-    else if(country.substr(0,4) == islands || last == "es" || last == "is" || last == "as" || last == "os"){
+    else if(country.substr(0,3) == islands || last == "es" || last == "is" || last == "as" || last == "os"){
         prefix = "les ";
     }
         // No prefix
