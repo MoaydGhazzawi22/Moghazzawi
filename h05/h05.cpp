@@ -53,9 +53,6 @@ string toFrenchGender(const string & country)
     else if(country.substr(country.length() -1) == "e" || country.substr(country.length() - 1) == "o"){
         prefix = "la ";
     }
-    else{
-        prefix = "le ";
-    }
 
     result = prefix + country;
     return result;
