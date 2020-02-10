@@ -28,14 +28,13 @@ string toFrenchGender(const string & country)
     char first = country.at(0);
 
     // Starting with the exceptions
-
-    if(country == "Mexique" || country == "Belize"){
-        prefix = "le ";
-
+        // No prefix
+    if(country == "Israel" || country == "Madagascar" || country == "Sri Lanka" || country == "Singapore" || country == "Monaco" || country == "Cuba" || country == "Cyprus"){
+        prefix = "";
     }
     else if(country == "Belize" || country == "Cambodge" || country == "Mexique" || country == "Mozambique" || country == "Zaire" || country == "Zimbabwe"){
 
-        prefix = "all le";
+        prefix = "le";
     }
         // Plural
     else if(country.substr(0,3) == islands || last == "es" || last == "is" || last == "as" || last == "os"){
@@ -45,10 +44,7 @@ string toFrenchGender(const string & country)
     else if(first == 'A' || first == 'E' || first == 'I' || first == 'O' || first == 'U'){
         prefix = 'l';
     }
-        // No prefix
-    else if(country == "Israel" || country == "Madagascar" || country == "Sri Lanka" || country == "Singapore" || country == "Monaco" || country == "Cuba" || country == "Cyprus"){
-        prefix = "";
-    }
+
         // Feminine & Masculine prefix
     else if(country.substr(country.length() -1) == "e" || country.substr(country.length() - 1) == "o"){
         prefix = "la ";
