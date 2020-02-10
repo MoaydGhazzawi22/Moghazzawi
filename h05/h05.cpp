@@ -46,8 +46,11 @@ string toFrenchGender(const string & country)
 
     string result = "who knows?";
     string prefix;
+    string islands = "iles";
+    int len = country.size();
+    string last = country.substr(country.size()-2);
 
-    // Starting with exceptions
+    // Starting with the exceptions
 
     result = prefix + country;
     return result;
