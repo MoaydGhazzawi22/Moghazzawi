@@ -42,7 +42,7 @@ string toFrenchGender(const string & country)
     }
             // Starting with vowels
     else if(first == 'A' || first == 'E' || first == 'I' || first == 'O' || first == 'U'){
-        prefix = 'L';
+        prefix = "l";
     }
 
         // Feminine & Masculine prefix
