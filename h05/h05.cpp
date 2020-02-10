@@ -35,7 +35,7 @@ string toFrenchGender(const string & country)
     }
     else if(country == "Belize" || country == "Cambodge" || country == "Mexique" || country == "Mozambique" || country == "Zaire" || country == "Zimbabwe"){
 
-        prefix = "le";
+        prefix = "all le";
     }
         // Plural
     else if(country.substr(0,3) == islands || last == "es" || last == "is" || last == "as" || last == "os"){
