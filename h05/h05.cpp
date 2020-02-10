@@ -41,28 +41,15 @@ Cuba and Cyprus have no prefix.
 
 // Write your function here
 
-string toFrenchGender(const string& country)
+string toFrenchGender(const string & country)
 {
 
     string result = "who knows?";
-    string prefix = "";
+    string prefix;
 
-    string last = country.substr(country.size()-2,2);
+    // Starting with exceptions
 
-    cout << last;
-
-    if(country == "Mexique" || country == "Belize"){
-
-        prefix = "le ";
-    }
-    else if(country == "Belize" || country == "Cambodge" || country == "Mexique" || country == "Mozambique" || country == "Zaire" || country == "Zimbabwe"){
-
-        prefix = "all le";
-    }
-    else if(country == "Israel" || country == "Madagascar" || country == "Sri Lanka" || country == "Singapore" || country == "Monaco"){
-
-        prefix = "";
-    }
+    result = prefix + country;
     return result;
 }
 
