@@ -29,7 +29,11 @@ string toFrenchGender(const string & country)
 
     // Starting with the exceptions
 
-    if(country == "Belize" || country == "Cambodge" || country == "Mexique" || country == "Mozambique" || country == "Zaire" || country == "Zimbabwe"){
+    if(country == "Mexique" || country == "Belize"){
+        prefix = "le ";
+
+    }
+    else if(country == "Belize" || country == "Cambodge" || country == "Mexique" || country == "Mozambique" || country == "Zaire" || country == "Zimbabwe"){
 
         prefix = "all le";
     }
