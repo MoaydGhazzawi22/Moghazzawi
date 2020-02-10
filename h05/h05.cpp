@@ -9,34 +9,6 @@
 using namespace std;
 
 string STUDENT = "mghazzawi";  // Add your Canvas login name
-/*
-
-Write a function named toFrenchGender() (string)
-that takes the French name of a country (input)
-and returns the name with the appropriate article added (output)
-
-"le" for masculine or "la" for feminine such as le Canada or la Belgique
-
-if the country name starts with a vowel(if statment)
-use "l" , for example l'Afghanistan.
-
-use les for plural country names. A name is plural if it ends in es, is, as, or os, or
-if the first word in the name is iles, or "islands".
-
-for countries do not have a preceding definite article(le or la): Israel, Madagascar, Sri Lanka,
-Singapore, Monaco, Cuba, and Cyprus.
-
-
-Country end in letter e or o? Feminine prefix->la (space)
-Otherwise? Masculine prefix->le (space)
-With these exceptions
-
-
- Starts with a vowel? prefix l' (no space)
- Plural? prefix is les (space)
-
-
-*/
 
 // Write your function here
 
@@ -48,9 +20,12 @@ string toFrenchGender(const string & country)
     string islands = "iles";
 
     int len = country.size();
-    string last = country.substr(country.size()-2,2);
+    string last = country.substr(country.size()-2);
     string plain = "Israel, Madagascar, Sri Lanka, Singapore, Monaco, Cuba, Cyprus";
+    string masculine = "Belize, Cambodge, Mexique, Mozambique, Zaire, Zimbabwe";
 
+    string vowels = "AEIOU";
+    char first = country.at(0);
 
     // Starting with the exceptions
 
@@ -58,10 +33,29 @@ string toFrenchGender(const string & country)
 
         prefix = "all le";
     }
+        // Starting with vowels
+    else if(first == 'A' || first == 'E' || first == 'I' || first == 'O' || first == 'U'){
+        prefix = "l";
+    }
+        // Plural
+    else if(country.substr(0,3) == islands || last == "es" || last == "is" || last == "as" || last == "os"){
+        prefix = "les ";
+    }
+        // No prefix
     else if(country == "Israel" || country == "Madagascar" || country == "Sri Lanka" || country == "Singapore" || country == "Monaco" || country == "Cuba" || country == "Cyprus"){
         prefix = "";
     }
-    else if(country == "Mexique" || country == "Belize"){
+    else if(country == plain){
+        prefix = "";
+    }
+        // Feminine & Masculine prefix
+    else if(country.substr(country.length() -1) == "e" || country.substr(country.length() - 1) == "o"){
+        prefix = "la ";
+    }
+    else if(country == masculine){
+        prefix = "el ";
+    }
+    else{
         prefix = "le ";
     }
 
