@@ -44,7 +44,7 @@ Cuba and Cyprus have no prefix.
 string toFrenchGender(const string& country)
 {
 
-    string result = "Who know";
+    string result = "Who knows";
     string prefix = "";
 
     string last = country.substr(country.size()-2,2);
