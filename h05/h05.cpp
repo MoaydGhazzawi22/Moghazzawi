@@ -19,7 +19,7 @@ string toFrenchGender(const string & country)
     string prefix;
     string islands = "iles";
 
-    int len = country.size();
+    int len = country.length();
     string last = country.substr(country.size()-2);
     string plain = "Israel, Madagascar, Sri Lanka, Singapore, Monaco, Cuba, Cyprus";
     string masculine = "Belize, Cambodge, Mexique, Mozambique, Zaire, Zimbabwe";
