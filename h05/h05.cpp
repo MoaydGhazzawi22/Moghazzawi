@@ -33,6 +33,10 @@ string toFrenchGender(const string & country)
 
         prefix = "all le";
     }
+        // Starting with vowels
+    else if(first == 'A' || first == 'E' || first == 'I' || first == 'O' || first == 'U'){
+        prefix = "l";
+    }
         // Plural
     else if(country.substr(0,3) == islands || last == "es" || last == "is" || last == "as" || last == "os"){
         prefix = "les ";
@@ -43,10 +47,6 @@ string toFrenchGender(const string & country)
     }
     else if(country == plain){
         prefix = "";
-    }
-            // Starting with vowels
-    else if(first == 'A' || first == 'E' || first == 'I' || first == 'O' || first == 'U'){
-        prefix = "l";
     }
         // Feminine & Masculine prefix
     else if(country.substr(country.length() -1) == "e" || country.substr(country.length() - 1) == "o"){
