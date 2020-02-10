@@ -31,7 +31,7 @@ string toFrenchGender(const string & country)
 
     if(country == "Belize" || country == "Cambodge" || country == "Mexique" || country == "Mozambique" || country == "Zaire" || country == "Zimbabwe"){
 
-        prefix = "all le ";
+        prefix = "all le";
     }
         // Starting with vowels
     else if(first == 'A' || first == 'E' || first == 'I' || first == 'O' || first == 'U'){
