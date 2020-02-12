@@ -27,11 +27,11 @@ num = num*10;
 num = num + digit;
 
 if(i== len-1){
-sum = num;
+sum += num;
 }
 
 }else{
-sum =num;
+sum +=num;
 num = 0;
 
 
