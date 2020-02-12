@@ -16,8 +16,6 @@ int sumNums(const string & str){
 	int sum{0};
 	int number{0};
 	for (size_t i{0}, len{str.size()}; i <len; ++i){
-		sum = 0;
-		number = 0;
 		char ch = str[i];
 		if(isdigit(ch)){
 			int digit = ch-0;
