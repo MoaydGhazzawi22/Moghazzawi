@@ -19,11 +19,11 @@ int sumNums(const string & str){
 		char ch = str[i];
 		if(isdigit(ch)){
 			char digit = ch-'0';
-			number = number*10;
+			number = number * 10;
 			number = number + digit;
 		}
 		else{
-			sum= sum +number;
+			sum= sum + number;
 			number = 0;
 		}
 
