@@ -7,24 +7,24 @@
 #include <cctype>
 using namespace std;
 
-string STUDENT = "mghazzawi";  // Add your Canvas login name
+string STUDENT = "Anonymous +";  // Add your Canvas login name
 
 // Add your function here
 
 int sumNums(const string & str){
 	int result = 0;
 	int sum{0};
-	int number{0};
+	int num{0};
 	for (size_t i{0}, len{str.size()}; i <len; ++i){
 		char ch = str[i];
 		if(isdigit(ch)){
-			int digit = ch-'0';
-			number = number * 10;
-			number = number + digit;
+			int digit = ch - '0';
+			num = num * 10;
+			num = num + digit;
 		}
 		else{
-			sum= sum + number;
-			number = 0;
+			sum= sum + num;
+			num = 0;
 		}
 
 	}
