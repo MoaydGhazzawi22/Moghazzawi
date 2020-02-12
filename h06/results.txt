@@ -1,0 +1,26 @@
+INSTRUCTOR TESTING H06--mghazzawi
+----------------------------------------------------------------------
+Checking function: sumNums("str") -------------------
+   + sumNums("a1234bb11")
+   + sumNums("yl39x")
+   + sumNums("5vcpdx7053911")
+   + sumNums("a22bbb3")
+   + sumNums("t5k2z2nov0i6")
+   + sumNums("Chocolate")
+   + sumNums("ws569o85oqwrp75om1")
+   + sumNums("7 11")
+   + sumNums("g")
+   + sumNums("hdv00lb324eie")
+   + sumNums("vll2013s")
+   + sumNums("7zh")
+   + sumNums("2xz86vr013h2s78c6j")
+   + sumNums("5$$1;;1!!")
+   + sumNums("ut80k770")
+   + sumNums("8")
+----------------------------------------------------------------------
+  Tests passing 16/16 (100%).
+
+----------------------------------------------------------------------
+INSTRUCTOR TESTS H06:mghazzawi: ALL TESTS -- PASS 16/16 (100%).
+----------------------------------------------------------------------
+MTU4MTQ5NDM0MTptZ2hhenphd2k6SDA2OjEwMC4wMCU=
