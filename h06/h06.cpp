@@ -23,10 +23,10 @@ char ch = str[i];
 if(isdigit(ch))
 {
 int digit = ch - '0';
-num = num*10;
+num = num * 10;
 num = num + digit;
 
-if(i== len-1){
+if(i == len - 1){
 sum += num;
 }
 
