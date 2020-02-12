@@ -26,7 +26,13 @@ int sumNums(const string & str){
 			sum= sum + num;
 			num = 0;
 		}
-
+	}
+	if(num != 0 && isdigit(num)){
+		sum = sum + num;
+	}
+	else{
+		num = 0;
+		sum = sum + num;
 	}
 	result = sum;
 	return result;
