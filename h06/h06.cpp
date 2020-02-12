@@ -7,10 +7,33 @@
 #include <cctype>
 using namespace std;
 
-string STUDENT = "WHO AM I";  // Add your Canvas login name
+string STUDENT = "mghazzawi";  // Add your Canvas login name
 
 // Add your function here
 
+int sumNums(const string & str){
+	int result = 0;
+	int sum{0};
+	int number{0};
+	for (size_t i{0}, len{str.size()}; i <len; ++i){
+		sum = 0;
+		number = 0;
+		char ch = str[i];
+		if(isdigit(ch)){
+			int digit = ch-0;
+			number = number*10;
+			number = number + digit;
+		}
+		else{
+			sum= sum +number;
+			number = 0;
+		}
+
+	}
+	result = sum;
+	return result;
+
+}
 
 
 
