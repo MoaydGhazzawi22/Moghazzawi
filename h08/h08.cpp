@@ -58,26 +58,28 @@ string codeForDigit(int digit)
         case 9:
             result = "|:|::";
             break;
-        case 10:
-            result = "|:|:::";
-            break;
         case 0:
             result = "||:::";
             break;
-    }
+        default:
+            break;
+   }
 
-    return result;
+   return result;
 }
 int checkDigit(int zip)
 {
-    int sumOfDigit = 0;
-    while(zip)
-    {
-        sumOfDigit += (zip % 10);
-        zip /= 10;
-    }
-    zip = 10 - (sumOfDigit % 10);
-    return zip;
+   int sumOfDigit = 0;
+   while(zip != 0)
+   {
+       sumOfDigit += (zip % 10);
+       zip /= 10;
+   }
+   zip = 10 - (sumOfDigit % 10);
+   if(zip == 10){
+       zip = 0;
+   }
+   return zip;
 }
 
 
@@ -86,6 +88,7 @@ int checkDigit(int zip)
 #include <iostream>
 int run()
 {
-    // You can add code that "runs" here
-    return 0;
+    cout << checkDigit(92667);
+   // You can add code that "runs" here
+   return 0;
 }
