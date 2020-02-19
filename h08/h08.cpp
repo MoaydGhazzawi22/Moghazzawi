@@ -1,6 +1,6 @@
 /**
- *  @author Mghazzawi
- *  @date 2/13/2020
+ *  @author Moayd Ghazzawi
+ *  @date 02/13/2020
  *  @file h07.cpp
  */
 #include <string>
