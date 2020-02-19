@@ -1,0 +1,67 @@
+INSTRUCTOR TESTING H07--mghazzawi
+----------------------------------------------------------------------
+Checking function: everyNth -------------------
+   + everyNth("Miracle", 2)->Mrce
+   + everyNth("abcdefg", 3)->adg
+   + everyNth("abcdefg", 2)->aceg
+   + everyNth("Chocolate", 3)->Cca
+   + everyNth("Chocolates", 3)->Ccas
+   + everyNth("Chocolates", 4)->Coe
+   + everyNth("Chocolates", 100)->C
+----------------------------------------------------------------------
+  Tests passing 7/7 (100%).
+
+Checking function: zipZap -------------------
+   + zipZap("zipXzap")->zpXzp
+   + zipZap("zopzop")->zpzp
+   + zipZap("zzzopzop")->zzzpzp
+   + zipZap("zibzap")->zibzp
+   + zipZap("zip")->zp
+   + zipZap("zi")->zi
+   + zipZap("z")->z
+   + zipZap("")->
+   + zipZap("zzp")->zp
+   + zipZap("abcppp")->abcppp
+   + zipZap("azbcppp")->azbcppp
+   + zipZap("azbcpzpp")->azbcpzp
+----------------------------------------------------------------------
+  Tests passing 12/12 (100%).
+
+Checking function: countCode -------------------
+   + countCode("aaacodebbb")->1
+   + countCode("codexxcode")->2
+   + countCode("cozexxcope")->2
+   + countCode("cozfxxcope")->1
+   + countCode("xxcozeyycop")->1
+   + countCode("cozcop")->0
+   + countCode("abcxyz")->0
+   + countCode("code")->1
+   + countCode("ode")->0
+   + countCode("c")->0
+   + countCode("")->0
+   + countCode("AAcodeBBcoleCCccoreDD")->3
+   + countCode("AAcodeBBcoleCCccorfDD")->2
+   + countCode("coAcodeBcoleccoreDD")->3
+----------------------------------------------------------------------
+  Tests passing 14/14 (100%).
+
+Checking function: prefixAgain -------------------
+   + prefixAgain("abXYabc", 1)
+   + prefixAgain("abXYabc", 2)
+   + prefixAgain("abXYabc", 3)
+   + prefixAgain("xyzxyxyxy", 2)
+   + prefixAgain("xyzxyxyxy", 3)
+   + prefixAgain("Hi12345Hi6789Hi10", 1)
+   + prefixAgain("Hi12345Hi6789Hi10", 2)
+   + prefixAgain("Hi12345Hi6789Hi10", 3)
+   + prefixAgain("Hi12345Hi6789Hi10", 4)
+   + prefixAgain("a", 1)
+   + prefixAgain("aa", 1)
+   + prefixAgain("ab", 1)
+----------------------------------------------------------------------
+  Tests passing 12/12 (100%).
+
+----------------------------------------------------------------------
+INSTRUCTOR TESTS H07:mghazzawi: ALL TESTS -- PASS 45/45 (100%).
+----------------------------------------------------------------------
+MTU4MjA3NDUwNjptZ2hhenphd2k6SDA3OjEwMC4wMCU=
