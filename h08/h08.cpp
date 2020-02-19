@@ -1,18 +1,84 @@
 /**
- *  @author Put your name here
- *  @date Put the date here
- *  @file h09.cpp
+ *  @author Mghazzawi
+ *  @date 2/13/2020
+ *  @file h07.cpp
  */
 #include <string>
 using namespace std;
 
-string STUDENT = "WHO AM I"; // Add your Canvas/occ-email ID
+string STUDENT = "mghazzawi"; // Add your Canvas/occ-email ID
 
 #include "h08.h"
 
 // Put your function implementation (definitions) in this file
+string barCode(int zip)
+{
+    string result;
+    int base = zip;
+    int check = checkDigit(base);
+    int digit;
+    for( int i = 0; i < 5; i++)
+    {
+        digit = base % 10;
+        base = base/10;
+        result = codeForDigit(digit) + result;
+    }
+    result = "|" + result + codeForDigit(check) + "|";
+    return result;
+}
+string codeForDigit(int digit)
+{
+    string result;
+    switch(digit)
+    {
+        case 1:
+            result = ":::||";
+            break;
+        case 2:
+            result = "::|:|";
+            break;
+        case 3:
+            result = "::||:";
+            break;
+        case 4:
+            result = ":|::|";
+            break;
+        case 5:
+            result = ":|:|:";
+            break;
+        case 6:
+            result = ":||::";
+            break;
+        case 7:
+            result = "|:::|";
+            break;
+        case 8:
+            result = "|::|:";
+            break;
+        case 9:
+            result = "|:|::";
+            break;
+        case 10:
+            result = "|:|:::";
+            break;
+        case 0:
+            result = "||:::";
+            break;
+    }
 
-
+    return result;
+}
+int checkDigit(int zip)
+{
+    int sumOfDigit = 0;
+    while(zip)
+    {
+        sumOfDigit += (zip % 10);
+        zip /= 10;
+    }
+    zip = 10 - (sumOfDigit % 10);
+    return zip;
+}
 
 
 
