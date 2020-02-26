@@ -1,0 +1,35 @@
+INSTRUCTOR TESTING H10--mghazzawi
+----------------------------------------------------------------------
+Checking function: read with int -------------------
+   X Prompt printed: Incorrect [How old are you?]
+   + Bad input checked
+   + Age set correctly->42
+   X Good input checked
+   + Trailing input retained
+----------------------------------------------------------------------
+  Tests passing 3/5 (60%).
+
+Checking function: read (with double) -------------------
+   X Prompt printed: Incorrect [What is your gpa?]
+   + Bad input checked
+   + GPA set correctly
+   X Good input checked
+   X Trailing input discarded
+----------------------------------------------------------------------
+  Tests passing 2/5 (40%).
+
+Checking function: read (with string) -------------------
+   X Prompt printed: Incorrect [What is your full name?]
+   + Reads whole name->Stephen Dean Gilbert
+   X Reads one word: Incorrect [Stephen Dean Gilbert]
+Checking function: read (with string) -------------------
+   + Read sentinel, return false
+   X Not sentinel, return true
+   X Correctly set ch when reading: Incorrect [-103]
+----------------------------------------------------------------------
+  Tests passing 1/3 (33%).
+
+----------------------------------------------------------------------
+INSTRUCTOR TESTS H10:mghazzawi: ALL TESTS -- PASS 6/13 (46%).
+----------------------------------------------------------------------
+MTU4MjczNDc0NTptZ2hhenphd2k6SDEwOjQ2LjE1JQ==
