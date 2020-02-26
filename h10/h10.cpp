@@ -1,6 +1,6 @@
 /**
- *  @author Put your name here
- *  @date Put the date here
+ *  @author Moayd Ghazzawi
+ *  @date 2/26/2020
  *  @file h10.cpp
  */
 #include <iostream>
@@ -8,12 +8,33 @@
 #include <string>
 using namespace std;
 
-string STUDENT = "WHO AM I?"; // Add your Canvas/occ-email ID
+string STUDENT = "mghazzawi"; // Add your Canvas/occ-email ID
 
 #include "h10.h"
 
 // Place your function definitions in this file.
-
+bool read(const string& str, int& age, bool ageb = false)
+{
+    cout << "How old are you?";
+    cin >> age;
+    return false;
+}
+bool read(const string& str, double& gpa, bool gpab = false)
+{
+    cout << "What is your gpa?";
+    cin >> gpa;
+    return false;
+}
+bool read(const string& str, string& name, bool nameb = false)
+{
+    cout << "What is your full name?";
+    getline(cin, name);
+    return false;
+}
+bool read(char& a, char sentinel)
+{
+    return false;
+}
 
 
 
