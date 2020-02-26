@@ -37,7 +37,6 @@ bool read(char& a, char sentinel)
 }
 
 
-
 ////////////////// STUDENT TESTING /////////////
 int run()
 {
