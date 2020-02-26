@@ -1,0 +1,44 @@
+INSTRUCTOR TESTING H09--mghazzawi
+----------------------------------------------------------------------
+Checking function: Tests for toRoman() -------------------
+   + toRoman(0)->OUT OF RANGE
+   + toRoman(3177)->MMMCLXXVII
+   + toRoman(3010)->MMMX
+   + toRoman(78)->LXXVIII
+   + toRoman(49)->XLIX
+   + toRoman(25)->XXV
+   + toRoman(5)->V
+   + toRoman(1613)->MDCXIII
+   + toRoman(883)->DCCCLXXXIII
+   + toRoman(654)->DCLIV
+----------------------------------------------------------------------
+  Tests passing 10/10 (100%).
+
+Checking function: Tests for ones() -------------------
+   + ones(7)->VII
+   + ones(4)->IV
+   + ones(6)->VI
+   + ones(2)->II
+----------------------------------------------------------------------
+  Tests passing 4/4 (100%).
+
+Checking function: Tests for tens() -------------------
+   + tens(2)->XX
+   + tens(4)->XL
+   + tens(8)->LXXX
+   + tens(6)->LX
+----------------------------------------------------------------------
+  Tests passing 4/4 (100%).
+
+Checking function: Tests for hundreds() -------------------
+   + hundreds(8)->DCCC
+   + hundreds(3)->CCC
+   + hundreds(6)->DC
+   + hundreds(5)->D
+----------------------------------------------------------------------
+  Tests passing 4/4 (100%).
+
+----------------------------------------------------------------------
+INSTRUCTOR TESTS H09:mghazzawi: ALL TESTS -- PASS 22/22 (100%).
+----------------------------------------------------------------------
+MTU4MjY5MjAxNTptZ2hhenphd2k6SDA5OjEwMC4wMCU=
